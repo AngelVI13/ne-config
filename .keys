@@ -1,0 +1,22 @@
+// Remove ^b because its used by tmux
+KEY 0x02 NOP
+
+// Remap ^o for mark
+KEY 0x0f NOP
+KEY 0x0f mark
+
+// Remap Goto Line to [J
+KEY 0x1ea NOP
+KEY 0x1ea GL
+
+// Remap Line down to ^J
+KEY 0x0a NOP
+KEY 0x0a LD
+
+// Remap Exec to [K
+KEY 0x1eb NOP
+KEY 0x1eb EX
+
+// Remap Line up to ^K
+KEY 0x0b NOP
+KEY 0x0b LU
